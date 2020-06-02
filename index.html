@@ -7,16 +7,16 @@
   
   <title>firstBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我的第一个博客">
+  <meta name="description" content="逐梦的主页">
 <meta property="og:type" content="website">
-<meta property="og:title" content="firstBlog">
+<meta property="og:title" content="Zero's homepage">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="firstBlog">
-<meta property="og:description" content="我的第一个博客">
+<meta property="og:site_name" content="Zero's homepage">
+<meta property="og:description" content="逐梦的主页">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="firstBlog">
-<meta name="twitter:description" content="我的第一个博客">
+<meta name="twitter:title" content="Zero's homepage">
+<meta name="twitter:description" content="逐梦的主页>
   
     <link rel="alternate" href="/atom.xml" title="firstBlog" type="application/atom+xml">
   
@@ -87,51 +87,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-引用计数法"><a href="#1-引用计数法" class="headerlink" title="1.引用计数法"></a>1.引用计数法</h3><ul>
-<li>给对象添加一个引用计数器</li>
-<li>用地方引用对象，计数器值加一</li>
-<li>引用失效，计数器值减一</li>
-<li>若计数器值为零，这对象不可能再被引用（对象死亡）</li>
-</ul>
-<hr>
-<h3 id="2-可达性分析算法"><a href="#2-可达性分析算法" class="headerlink" title="2.可达性分析算法"></a>2.可达性分析算法</h3><ul>
-<li>“GC Roots”对象作为起始点</li>
-<li>搜索过的路径称为引用链</li>
-<li>当一个对象到“GCRoots”没用任何引用链时，对象不可达<br><br><strong>==”GC Roots”==</strong></li>
-<li style="list-style: none"><input type="checkbox"> 虚拟机栈（栈帧中的本地变量表）中的引用对象</li>
-<li style="list-style: none"><input type="checkbox"> 方法区中类静态属性引用的对象</li>
-<li style="list-style: none"><input type="checkbox"> 方法区中常量引用的对象</li>
-<li style="list-style: none"><input type="checkbox"> 本地方法栈中JNI(Native方法)引用的对象</li>
-</ul>
-<hr>
-<h3 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h3><ul>
-<li>强引用</li>
-<li>软引用</li>
-<li>弱引用</li>
-<li>虚引用</li>
-</ul>
-<hr>
-<h3 id="4-生存VS死亡"><a href="#4-生存VS死亡" class="headerlink" title="4.生存VS死亡"></a>4.生存VS死亡</h3><ul>
-<li>真正宣告一个对象死亡，至少要经过两次标记过程</li>
-<li>若对象经过可达性分析算法后没用与”GC Roots”相连，则进行第一次标记并筛选</li>
-<li>筛选条件为是否必要执行finalize()</li>
-<li>==每个对象的Finalize()方法只执行一次==</li>
-<li>若对象没有覆盖finalize()或finalize()已被虚拟机调用过.则没有必要执行finalize()</li>
-<li>若要执行finalize()，则把对象放入F-Queue队列（执行是指虚拟机会触发finalize()，但不保证等待其执行完成）</li>
-<li>若对象在执行finalize()时与其他在引用链上的对象建立联系，则第二次标记时不被回收</li>
-<li>否者被GC回收</li>
-</ul>
-<h3 id="5-方法区回收"><a href="#5-方法区回收" class="headerlink" title="5.方法区回收"></a>5.方法区回收</h3><p>==回收废弃的常量和无用的类==</p>
-<h5 id="5-1废弃常量"><a href="#5-1废弃常量" class="headerlink" title="5.1废弃常量"></a>5.1废弃常量</h5><ul>
-<li>系统中没用其他地方引用该常量<h5 id="5-2无用的类"><a href="#5-2无用的类" class="headerlink" title="5.2无用的类"></a>5.2无用的类</h5></li>
-<li>该类的所用实例都已经被回收，即java堆中不存在该类的任何实例</li>
-<li>加载该类的ClassLoader已经被回收</li>
-<li>该类对应的java.lang.Class对象已经没有在任何地方被引用，无法在任何地方通过放射机制访问该类的方法</li>
+ <h3 id="Individual Resume"></h3>
+ <ul>
+<li>Coding</li>
+<li>Reading</li>
+<li>Playing</li>
 </ul>
 
-      
-    </div>
-    <footer class="article-footer">
+              
+<footer class="article-footer">
       <a data-url="http://yoursite.com/2019/03/31/third/" data-id="cjtwu7f5y0002k0w1vge2tzpk" class="article-share-link">Share</a>
       
       
@@ -162,12 +126,7 @@
 
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h2><p>​    </p>
 
-      
-    </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2019/03/31/firstPage/" data-id="cjtwu7f5p0000k0w1xy231ovn" class="article-share-link">Share</a>
       
